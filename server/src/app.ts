@@ -30,7 +30,7 @@ app.get("/health", (_req, res) => {
 // API routes
 app.use("/api/v1", routes);
 
-// Error handler (must be last)
+// Error handler
 app.use(errorHandler);
 
 export default app;

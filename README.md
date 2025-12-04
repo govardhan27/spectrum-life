@@ -89,23 +89,23 @@ frontend runs on: `http://localhost:5173`
 
 **Start database:**
 ```bash
-cd server
-docker compose up -d
+   cd server
+   docker compose up -d
 ```
 
 **Stop database:**
 ```bash
-docker compose down
+   docker compose down
 ```
 
 **View logs:**
 ```bash
-docker compose logs -f postgres
+   docker compose logs -f postgres
 ```
 
 **Reset database (deletes all data):**
 ```bash
-docker compose down -v
+   docker compose down -v
 ```
 
 ## Architecture
