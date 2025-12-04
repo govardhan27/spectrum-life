@@ -14,6 +14,7 @@ server/           # Node.js + Express + TypeScript backend
 - Git
 - yarn (optional if using npm)
   This project supports both **yarn** and **npm**, choose one and use it consistently for both frontend and backend
+- docker
 
 
 ### Setup instruction
