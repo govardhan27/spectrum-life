@@ -1,0 +1,19 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+model GpContact {
+  id            String   @id @default(uuid())
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+  gpName        String   @map("gp_name")
+  email         String   @unique
+  contactNumber String?  @map("contact_number")
+
+  @@map("gp_contacts")
+}
